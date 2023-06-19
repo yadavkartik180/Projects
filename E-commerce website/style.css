@@ -1,0 +1,221 @@
+:root {
+  --pure: #fffbf5;
+  --dark: #000000;
+  --ternery: #898989;
+}
+* {
+  margin: 0;
+}
+body {
+  width: 100%;
+  font-family: "league spartan", sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #e3e6f5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+}
+header .right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .right ul li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+header .right ul li a {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  font-family: "league spartan", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+header .right ul li a:hover {
+  color: #13b3a8;
+}
+/* header .right li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #13b3a8;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transition: 0.3s ease;
+} */
+header .right li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #13b3a8;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+.hero {
+  background-image: url(./images/hero4.png);
+  height: 86.5vh;
+  width: 88%;
+  background-size: cover;
+  background-position: top 24% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 9;
+}
+.hero h1 {
+  padding-bottom: 15px;
+}
+.hero h2 {
+  font-size: 50px;
+}
+.hero h2 span {
+  color: #10978e;
+  font-size: 54px;
+}
+p {
+  padding: 10px 0;
+  color: #898989;
+  padding-bottom: 22px;
+}
+.hero button {
+  background-image: url(./images/button.png);
+  background-color: transparent;
+  border: 0;
+  color: #10978e;
+  padding: 14px 80px 14px 80px;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 15px;
+}
+.feature {
+  padding-top: 80px;
+  display: flex;
+}
+.pad {
+  padding: 40px 80px;
+}
+.feature .free-ship {
+  height: 140px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 10px;
+}
+.feature .free-ship:hover {
+  box-sizing: 10px 10px 54px rgba(70, 62, 221, 0.1);
+  box-shadow: 2px 2px 20px #707070;
+}
+.feature .free-ship h1 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #10978e;
+  padding: 9px 8px 6px 8px;
+  background-color: pink;
+}
+.feature .free-ship h2 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #10978e;
+  padding: 9px 8px 6px 8px;
+  background-color: rgb(142, 245, 142);
+}
+.feature .free-ship h3 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #10978e;
+  padding: 9px 8px 6px 8px;
+  background-color: rgb(143, 221, 245);
+}
+.feature .free-ship h4 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #10978e;
+  padding: 9px 8px 6px 8px;
+  background-color: rgb(186, 185, 250);
+}
+.feature .free-ship h5 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #10978e;
+  padding: 9px 8px 6px 8px;
+  background-color: pink;
+}
+.feature .free-ship h6 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #10978e;
+  padding: 9px 8px 6px 8px;
+  background-color: rgb(231, 216, 197);
+}
+.product1 {
+  text-align: center;
+  padding-left: 2rem;
+}
+.product1 .pro {
+  width: 20%;
+  min-height: 250px;
+  padding: 10px 12px;
+  border: 1px solid #c5cfc6;
+  cursor: pointer;
+  box-shadow: 40px 40px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 25px;
+  transition: 0.2s ease;
+  margin: 20px 0;
+  transition: .3s ease;
+}
+.product1 .pro:hover {
+  box-shadow: 2px 2px 20px #707070;
+ 
+}
+.pro img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  box-shadow: 100px 100px 30px rgba(0, 0, 0, 0.06);
+}
+.product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+.product1 .pro .des span {
+  color: #898989;
+}
+.product1 .pro .des h2 {
+  color: #252525;
+}
+.product1 .pro .des .star {
+  font-size: 150%;
+  color: rgb(248, 248, 103);
+}
+.product1 .pro .des h3 {
+  color: #28a59d;
+}
+.product1 .pro .des a{
+
+  text-decoration: none;
+}
+.product1 .pro a span {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  color: #08837b;
+}
+.pro-container{
+ display: flex;
+ justify-content: space-between;
+}
