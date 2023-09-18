@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+  color: white;
+}
+button {
+  background-color: transparent;
+  color: #ff7300;
+  border: none;
+  font-size: 18px;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+}
+input {
+  border: none;
+  background-color: black;
+  margin-left: 1rem;
+  font-size: 18px;
+  color: white;
+}
+p:after {
+  content: "";
+  border: 1px solid white;
+  position: absolute;
+  width: 190px;
+  left: 300px;
+  top: 2.5rem;
+}
+input:focus {
+  outline: none;
+}

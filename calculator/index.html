@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <script
+      src="https://kit.fontawesome.com/5d576a6027.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p></p>
+    <div class="card-wrapper" style="margin-left: 18rem">
+      <div class="card">
+        <input type="text" id="result" name="result" placeholder="result" />
+      </div>
+      <div class="card">
+        <button value="AC" id="ac" onclick="clearScreen()">AC</button>
+        <button><</button>
+        <button value="%" onclick="setvalv(value)">%</button>
+        <button value="/" onclick="setvalv(value)">/</button>
+      </div>
+      <div class="card">
+        <button style="color: white" value="7" onclick="setvalv(value)">
+          7
+        </button>
+        <button style="color: white" value="8" onclick="setvalv(value)">
+          8
+        </button>
+        <button style="color: white" value="9" onclick="setvalv(value)">
+          9
+        </button>
+        <button value="*" onclick="setvalv(value)">*</button>
+      </div>
+      <div class="card">
+        <button style="color: white" value="4" onclick="setvalv(value)">
+          4
+        </button>
+        <button style="color: white" value="5" onclick="setvalv(value)">
+          5
+        </button>
+        <button style="color: white" value="6" onclick="setvalv(value)">
+          6
+        </button>
+        <button value="-" onclick="setvalv(value)">-</button>
+      </div>
+      <div class="card">
+        <button style="color: white" value="1" onclick="setvalv(value)">
+          1
+        </button>
+        <button style="color: white" value="2" onclick="setvalv(value)">
+          2
+        </button>
+        <button style="color: white" value="3" onclick="setvalv(value)">
+          3
+        </button>
+        <button value="+" onclick="setvalv(value)">+</button>
+      </div>
+      <div class="card">
+        <button></button>
+        <button style="color: white" value="0" onclick="setvalv(value)">
+          0
+        </button>
+        <button value="." onclick="setvalv(value)">.</button>
+        <button onclick="result= result.value =eval(result.value)">=</button>
+      </div>
+    </div>
+  </body>
+</html>
